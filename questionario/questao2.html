@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Metal+Mania|Neucha|Smythe&display=swap" rel="stylesheet">
+	<title>Mitologia</title>
+	<style type="text/css">
+		label.errado {
+			color: red;
+		}
+		label.certo {
+			color: #3ADF00;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://kit.fontawesome.com/4bed44fa76.js"></script>
+	<div class="menufixo">
+		<nav class="menu">
+			<ul>
+		    	<li id="ajeitar"><a href="../index.html"><i class="fas fa-home"></i>Início</a></li>
+		        <li><a href="#"><i class="fas fa-ethernet"></i>Mitologia</a>
+		        	<ul>
+		            	<li><a href="tabela.html">Nomes dos Deuses</a></li>
+		            	<li class="passeio"><a href="#">Grega</a>
+		            		<ul class="submenu2">
+		            			<li><a href="../mitos/gregos/pandora.html">Pandora</a></li>
+		            			<li><a href="../mitos/gregos/camila.html">Camila</a></li>
+		            			<li><a href="../mitos/gregos/odisseiadehomero.html">Odisséia de Homero</a></li>
+		            			<li><a href="../mitos/gregos/minotauro.html">Minotauro</a></li>
+		            		</ul>
+		            	</li>
+		                <li><a href="../mitos/apoloedafne.html">Romano</a></li>
+		                <li><a href="../mitos/bememall.html">Persa</a></li>
+		                <li><a href="../mitos/shiva.html">Indiana</a></li>
+		                <li><a href="../mitos/nordico.html">Nórdico</a></li>
+		                <li><a href="../mitos/donodalanca.html">Africana</a></li>
+		                <li><a href="../mitos.sol.html">Asteca</a></li>
+		                <li><a href="../mitos/inanna.html">Mesopotâmica</a></li>
+		            	<li><a href="questionario.html">Questionário</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="../videos.html"><i class="fas fa-video"></i>Vídeos</a></li>
+		        <li><a href="../trabalho.html"><i class="fas fa-user"></i>Nosso Trabalho</a></li>
+		        <li><a href="../referencias.html"><i class="fas fa-list"></i>Referências</a></li>
+		    </ul>
+		</nav>
+	</div>
+	<div class="conteudo">
+		<h1>Questionário</h1>
+		<form id="quiz">
+		<div>
+			<h2 class="meiartbm">2- Perséfone foi sequestrada por quem?</h2>
+			<div>
+				<label>Zeus</label>
+				<input type="radio" name="resposta" value="Primeira Alternativa" class="certo">
+			</div>
+			<div>
+				<label>Perséfone</label>
+				<input type="radio" name="resposta" value="Segunda Alternativa" class="errado">	
+			</div>
+			<div>
+				<label>Platão</label>
+				<input type="radio" name="resposta" value="Terceira Alternativa" class="errado">
+			</div>
+			<div>
+				<label>Tiririca</label>
+				<input type="radio" name="resposta" value="Quarta Alternativa" class="errado">
+			</div>
+			<div>
+				<label>Jô Soares</label>
+				<input type="radio" name="resposta" value="Quinta Alternativa" class="errado">
+			</div>
+		</div>
+		
+	</form>
+		<div class="meiar">
+			<input type="button" onclick="verificarResposta()" name="btnVerificar" value="Verificar Resposta">
+			<button><a href="questao3.html">Próxima Questão</a></button>
+		</div>
+	</form>
+	<script type="text/javascript">
+		function verificarResposta() {
+			// Pegar a resposta correta do quiz
+			var correta = document.getElementsByClassName("certo")[0];
+			// Verificar se a resposta do usuário está correta
+			var respostaUsuario = pegarRespostaUsuario();
+
+			verificarRespostaUsuario(correta, respostaUsuario);
+			finalizarResposta();
+			// return false;
+		}
+
+		function pegarRespostaUsuario(){
+			var respostaUsuario;
+			for (i = 0; i < 5; i++) { 
+				var resposta = document.getElementsByName("resposta")[i].checked == true;
+				if (resposta) {
+					respostaUsuario = document.getElementsByName("resposta")[i];
+					continue;
+				}
+			}
+			return respostaUsuario;
+		}
+
+		function verificarRespostaUsuario(respostaCorreta, respostaUsuario) {
+			if (respostaCorreta.value != respostaUsuario.value) {
+				var label = respostaUsuario.parentElement.children[0];
+				label.classList.add('errado');
+			}
+			var label = respostaCorreta.parentElement.children[0];
+			label.classList.add('certo');
+		}
+
+		function finalizarResposta() {
+			document.getElementsByName('btnVerificar')[0].disabled = true;
+		}
+	</script>
+	</div>
+	<div class="fundao">
+	</div>	
+</body>
+</html>

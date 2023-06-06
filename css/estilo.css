@@ -1,0 +1,248 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:'Arial';
+}
+body {
+	background-image: url(../imagens/fundo.png);
+	background-size: cover;
+}
+.diferenciada {
+	background-image: url(../imagens/fundoesticado.png);
+	background-size: cover;
+}
+body::-webkit-scrollbar {
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+	background: #620000;
+}
+#ajeitar {
+	margin-left: -15px;
+}
+.botaozinho {
+	float: right;
+}
+.menufixo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.menu{
+	width:100%;
+	height:50px;
+	background-color: #222;
+}
+.menu>ul{
+	list-style:none;	
+	position:relative;
+	text-align: center;
+}
+.menu ul li{
+	width:270px;
+	float:left;	
+}
+.menu ul li i {
+	padding-right: 7px;
+}
+.menu a{
+	padding:15px;
+	display:block;
+	text-decoration: none;
+	background-color: #222;
+	text-align: center;
+	color: #aaa;
+}
+.menu ul ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+}
+.menu ul li:hover ul{
+	visibility:visible;
+}
+	
+.menu a:hover{
+	background-color: gray;
+}
+
+.menu ul ul li{
+	float:none;
+	border-bottom: solid 1px #ccc;
+}
+.menu ul ul li a{
+	background-color: #222;
+	color: #aaa;
+}
+.submenu2 {
+	display: none;
+}
+.passeio:hover .submenu2 {
+	position: absolute;
+	display: block;
+	margin-top: -49px;
+	margin-left: 250px;
+	border-left: solid 1px #ccc; 
+}
+.passeio:hover .submenu2 li:first-child{
+	border-top: solid 1px #ccc;
+}
+.conteudo {
+	margin: auto;
+	text-align: justify;
+}
+
+/* smythe metal mania neucha*/
+.conteudo h1 {
+	margin-top: 185px;
+	padding-bottom: 25px;
+	font-size: 120px;
+	text-align: center;
+	font-family: 'Metal Mania', cursive;
+	letter-spacing: 3px;
+	color: #620000;
+}
+.conteudo .abaixo {
+	margin-top: 280px;
+}
+.conteudo .imageminicio {
+	margin: 20px 250px 20px 270px;
+}
+.conteudo p {
+	margin-left: 240px;
+	margin-right: 240px;
+	letter-spacing: 2px;
+	font-family: 'Neucha', cursive;
+	font-size: 25px;
+	padding-bottom: 40px;
+	color: black;
+}
+.conteudo .diminuida {
+	font-size: 20px;
+}
+.conteudo .diminuir {
+	font-size: 80px;
+}
+label {
+	margin-left: 240px;
+	font-size: 25px;
+}
+.conteudo .meiartbm {
+	font-size: 30px;
+	margin-left: 240px;
+}
+.conteudo .meiar {	
+	margin-left: 550px;
+}
+}
+.conteudo .primeira {
+	color: #620000;
+	font-size: 80px;
+	padding-right: 8px;
+	float: left;
+	line-height: 0.8;
+	font-family: 'Metal Mania', cursive;
+}
+.conteudo #letraC {
+	line-height: 0.6;
+}
+.conteudo .iae {
+	font-size: 90px;
+}
+.conteudo tr, td, th {
+	border: solid 3px #620000;
+	font-family: 'Neucha', cursive;
+}
+.conteudo table {
+	margin-left: 16%;
+	font-size: 19px;
+	text-align: center;
+}
+.conteudo td:last-child {
+	text-align: left;
+}
+.box1, .box2, .box3, .box4, .box5 {
+	width: 400px;
+	height: 500px;
+}
+.box1 h4, .box2 h4, .box3 h4, .box4 h4, .box5 h4{
+	text-align: center;
+	font-size: 27px;
+	font-family: 'Neucha', cursive;
+	margin-top: -3px;
+}
+.box1, .box3 {
+	float: left;
+	margin-left: 20%;
+}
+.box1 img, .box3 img{
+	margin-left: 25px;
+}
+.box2, .box4{
+	float: left; 
+}
+.box2 img, .box4 img{
+	margin-left: 54px;
+}
+.box2 .h4direita, .box4 .h4direita {
+	margin-left: 35px;
+}
+.box5 {
+	margin: auto;
+	text-align: center;
+}
+.cornao {
+	visibility: hidden;
+	font-family: 'Metal Mania', cursive;
+	transition: 0.5s;
+	color: transparent;
+}
+.corninho {
+	margin-left: 70px;
+	transition: 1s;
+}
+.ativacornao:hover .cornao {
+	visibility: visible;
+	color: #620000;
+}
+.ativacornao:hover .corninho {
+	margin-left: 10px;
+}
+.fundao {
+	color: transparent;
+	padding-top: 70px;
+}
+.boxzada {
+	text-align: center;
+}
+.boxzadav2 {
+	margin: auto;
+	text-align: left;
+	width: 935px;
+}
+.boxzadav2 li, .boxzadav2 a {
+	font-family: 'Neucha', cursive;
+	font-size: 25px;
+	text-decoration: none;
+	color: black;
+	transition: 0.5s;
+}
+.boxzadav2 a:hover {
+	border-bottom: solid 2px black;
+	font-size: 29px;
+}
+.boxzadav2 li {
+	padding-top: 25px;
+	margin-left: 110px;
+}
+
+.conteudo caption {
+	margin-top:5px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Metal Mania', cursive;
+	letter-spacing: 3px;
+	color: #620000;
+}
